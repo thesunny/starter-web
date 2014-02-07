@@ -1,0 +1,12 @@
+{
+  "bootstrap": [
+    "bower_components/bootstrap/dist/css/bootstrap.css",
+    "bower_components/bootstrap/dist/js/bootstrap.js",
+    "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+    "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+    "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+    "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff"
+  ],
+  "jquery": "bower_components/jquery/jquery.js",
+  "lodash": "bower_components/lodash/dist/lodash.compat.js"
+}
