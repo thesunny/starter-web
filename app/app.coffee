@@ -1,14 +1,20 @@
 path = require 'path'
 express = require 'express'
 connectAssets = require 'connect-assets'
+path = require 'path'
 
 app = express()
 
 app.set 'port', process.env.PORT || 3000
 app.set 'views', path.join(__dirname)
 app.set 'view engine', 'jade'
+
+# static map /public on the web server to the /public directory
+app.use "/public", express.static(path.join(process.cwd(), 'public'))
+
+# To use connect assets, see https://github.com/adunkman/connect-assets
 app.use connectAssets(
-  src: 'public',
+  src: 'assets',
   helperContext: app.locals
 )
 
